@@ -74,7 +74,7 @@ public class VehiclePerformanceRepositoryService {
         if (command.getDepartureTime() != null) {
             existing.setDepartureTime(command.getDepartureTime());
         }
-        if (command.getAccumulatedDistanceBefore() != null) {
+        if (command.getAccumulatedDistanceBefore() != 0) {
             existing.setAccumulatedDistanceBefore(
                 command.getAccumulatedDistanceBefore()
             );
@@ -85,7 +85,7 @@ public class VehiclePerformanceRepositoryService {
         if (command.getArrivalTime() != null) {
             existing.setArrivalTime(command.getArrivalTime());
         }
-        if (command.getAccumulatedDistanceAfter() != null) {
+        if (command.getAccumulatedDistanceAfter() != 0) {
             existing.setAccumulatedDistanceAfter(
                 command.getAccumulatedDistanceAfter()
             );
